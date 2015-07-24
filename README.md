@@ -17,15 +17,38 @@ The parts list will evolve over time as the project progresses, but for the init
 * 10K Resistor
 * Hookup Wires
 
+## Required Libraries
+
+To work with the DHT11 and DHT22 sensors we will need to install the [Adafruit DHT Library](https://github.com/adafruit/DHT-sensor-library).
+
+If you are using the Arduino IDE v1.6.4 or above you can install the library using the Library Manager.
+
+Manual installation instructions to follow.
+
 ## Experiments
 
 ### 1. Serial DHT11
 
-> TBC: Wiring Diagram
+Lets start simple and just get some readings from the DHT11 and pass them back to the Serial interface. The wiring for this sketch requires just 4 connections as follows:
 
-Code available in `_01-dht11-serial`
+* DHT pin 1 to Arduino 5v
+* DHT pin 2 to Arduino Digital Pin 2
+* DHT pin 4 to Arduino ground
+* 10K resistor between DHT pin 1 and DHT pin 2
 
-Reads the temperature and heat index (feels like) in Celcius, relative humidity in %.
+*Note: DHT pin 3 is left unconnected.*
+
+#### Wiring Diagram
+
+![](./Diagrams/01-dht-serial/dht11-serial.png)
+
+#### Sketch
+
+Code available in `/_01-dht11-serial`
+
+Upload the sketch to your Arduino and then open the serial monitor console (Tools > Serial Monitor) to view the output.
+
+Reads the temperature and heat index (feels like temp) in Celcius, relative humidity in %.
 
 Sample output:
 

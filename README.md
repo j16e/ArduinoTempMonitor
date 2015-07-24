@@ -16,3 +16,23 @@ The parts list will evolve over time as the project progresses, but for the init
 * DHT11 Temperature Sensor
 * 10K Resistor
 * Hookup Wires
+
+## Experiments
+
+### 1. Serial DHT11
+
+> TBC: Wiring Diagram
+
+Code available in `_01-dht11-serial`
+
+Reads the temperature and heat index (feels like) in Celcius, relative humidity in %.
+
+Sample output:
+
+```
+DHT11 Serial
+Temperature: 19.00c 	Humidity: 88.00% 	Feels Like: 18.68c
+Temperature: 19.00c 	Humidity: 88.00% 	Feels Like: 18.68c
+Temperature: 19.00c 	Humidity: 88.00% 	Feels Like: 18.68c
+Temperature: 19.00c 	Humidity: 87.00% 	Feels Like: 19.00c
+Temperature: 19.00c 	Humidity: 87.00% 	Feels Like: 19.00c```

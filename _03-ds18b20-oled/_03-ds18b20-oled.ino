@@ -48,6 +48,6 @@ void loop() {
   temperature = sensors.getTempCByIndex(0);
   dtostrf(temperature, 2, 2, temperatureString);
   
-  // Delay for 1 seconds between readings
-  delay(1000);
+  // Delay for 2 seconds between readings
+  delay(2000);
 }
